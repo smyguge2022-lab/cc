@@ -1,0 +1,11 @@
+{
+  "threshold": 0.1,
+  "output_fps": 30,
+  "debug": true,
+  "strategies": {
+    "hash_diff": {
+      "enabled": true,
+      "threshold": 0.05
+    }
+  }
+}
