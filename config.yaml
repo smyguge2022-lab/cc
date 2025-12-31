@@ -5,3 +5,15 @@ strategies:
   hash_diff:
     enabled: true
     threshold: 0.05
+dedup:
+  threshold: 1.0
+  strategies:
+    - name: exact_hash
+      enabled: true
+      weight: 1.0
+      params: {}
+    - name: time_window
+      enabled: false
+      weight: 0.5
+      params:
+        window_seconds: 2.0
